@@ -19,3 +19,17 @@ body {
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
 }
+
+.nav-border {
+    border-radius:0px 0px 48px 48px;
+}
+
+.mt-l {
+    margin-top: 4rem;
+}
+
+.preview-image {
+    min-width: 400px;
+    min-height: 220px;
+    background-color: #d2d2d2;
+}

@@ -14,8 +14,8 @@ export class ApiBannerbearComponent {
   n_txt: string = '';
   n_txtclr: string = '#000';
   n_img: string = '';
-  n_theme: string = 'https://cdn.bannerbear.com/sample_images/welcome_bear_photo.jpg';
-  n_theme_ico: string = 'https://cdn.bannerbear.com/sample_images/welcome_bear_photo.jpg';
+  n_theme: string = '';
+  n_theme_ico: string = '';
 
   private tempChristmas() {
     this.n_txtclr = '#00FF22';

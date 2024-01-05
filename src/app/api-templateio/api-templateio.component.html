@@ -1,6 +1,6 @@
 <form (ngSubmit)="getImg()">
 
-  <nav class="navbar navbar-expand-lg bg-primary px-5" data-bs-theme="light">
+  <nav class="navbar navbar-expand-lg bg-primary px-5 fixed-top nav-border" data-bs-theme="light">
       <div class="container-fluid justify-content-center">
           <div class="input-group m-1">
               <span class="input-group-text">API Key</span>
@@ -13,7 +13,7 @@
       </div>
   </nav>
 
-  <div class="container p-3">
+  <div class="container p-3 mt-l">
       <div class="row align-items-center text-light menu-container">
           <div class="col-md-12">
           
@@ -57,9 +57,9 @@
             </div>
         
             <div class="card text-center m-auto mt-4 mb-3" style="min-width: 20rem; max-width: 30rem;">
-                <img src="{{n_imageresult}}" class="card-img-top" alt="">
+                <img src="{{n_imageresult}}" class="card-img-top preview-image" alt="">
                 <div class="card-body">
-                  <p class="card-text">Resultado da Imagem</p>
+                  <p class="card-text text-primary-emphasis">RESULTADO</p>
             </div>
         </div>
   

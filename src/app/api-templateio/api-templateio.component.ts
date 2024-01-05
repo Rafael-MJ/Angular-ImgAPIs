@@ -26,9 +26,9 @@ export class ApiTemplateioComponent {
   n_txt: string = '';
   n_txtclr: string = '#000';
   n_img: string = '';
-  n_theme: string = 'https://cdn.bannerbear.com/sample_images/welcome_bear_photo.jpg';
-  n_theme_ico: string = 'https://cdn.bannerbear.com/sample_images/welcome_bear_photo.jpg';
-  n_imageresult: string = "https://logos.flamingtext.com/Word-Logos/exemplo-design-sketch-name.png";
+  n_theme: string = '';
+  n_theme_ico: string = '';
+  n_imageresult: string = '';
 
   loading: string = 'https://gifs.eco.br/wp-content/uploads/2021/08/imagens-e-gifs-de-loading-39.gif';
 
