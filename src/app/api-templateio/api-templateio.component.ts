@@ -19,13 +19,13 @@ interface PostData {
 })
 
 export class ApiTemplateioComponent {
-  KEY_TEMP: string = ''; // set Template Key
-  KEY_API: string = ''; // set API Key
+  KEY_TEMP: string = '';
+  KEY_API: string = '';
 
   n_template: number = 0;
   n_txt: string = '';
   n_txtclr: string = '#000';
-  n_img: string = 'https://images.unsplash.com/photo-1600891964092-4316c288032e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MXwxOTc1MDZ8MHwxfHNlYXJjaHw0fHxzdGVha3xlbnwwfDB8fA&ixlib=rb-1.2.1&q=80&w=1080';
+  n_img: string = '';
   n_theme: string = 'https://cdn.bannerbear.com/sample_images/welcome_bear_photo.jpg';
   n_theme_ico: string = 'https://cdn.bannerbear.com/sample_images/welcome_bear_photo.jpg';
   n_imageresult: string = "https://logos.flamingtext.com/Word-Logos/exemplo-design-sketch-name.png";
@@ -95,18 +95,11 @@ export class ApiTemplateioComponent {
     }).then(response => response.json())
     .then(response => {
       responseJSON = response;
+      
       const download_url = response.download_url;
       const download_url_png = response.download_url_png;
       const status = response.status;
       const transaction_ref = response.transaction_ref;
-
-      // Tests
-
-      console.log("a: " + download_url);
-      console.log("b: " + download_url_png);
-      console.log("c: " + status);
-      console.log("d: " + transaction_ref);
-      console.log("e: " + responseJSON);
 
       this.n_imageresult = download_url;
     });

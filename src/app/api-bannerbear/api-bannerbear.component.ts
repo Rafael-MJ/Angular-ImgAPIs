@@ -7,13 +7,13 @@ import { Component } from '@angular/core';
 })
 export class ApiBannerbearComponent {
 
-  KEY_Template: string = ' '; // set Template Key
-  KEY_API: string = ' '; // set API Key
+  KEY_TEMP: string = '';
+  KEY_API: string = '';
 
   n_template: number = 0;
   n_txt: string = '';
   n_txtclr: string = '#000';
-  n_img: string = 'https://cdn.bannerbear.com/sample_images/welcome_bear_photo.jpg';
+  n_img: string = '';
   n_theme: string = 'https://cdn.bannerbear.com/sample_images/welcome_bear_photo.jpg';
   n_theme_ico: string = 'https://cdn.bannerbear.com/sample_images/welcome_bear_photo.jpg';
 
@@ -29,7 +29,7 @@ export class ApiBannerbearComponent {
     }
 
     var data = {
-      "template" : this.KEY_Template,
+      "template" : this.KEY_TEMP,
       "modifications": [
         {
           "name": "image",
