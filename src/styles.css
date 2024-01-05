@@ -1,7 +1,21 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: #EFEFEF;
 }
 
 .interactive {
     min-width: 200px;
+}
+
+.menu-container {
+    min-height: 85vh;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15);
 }
