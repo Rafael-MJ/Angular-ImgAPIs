@@ -1,0 +1,48 @@
+<form (ngSubmit)="getImg()">
+
+    <div class="nav row justify-content-center text-primary-emphasis fs-3 mt-5">
+        PERSONALIZE SUA IMAGEM
+    </div>
+
+    <div class="form-floating m-auto mt-5 col-2">
+        <select class="form-select" id="n_template" name="n_template" [(ngModel)]="n_template">
+          <option value="0" selected>Nenhum</option>
+          <option value="1">Natal</option>
+        </select>
+        <label for="n_template">Template</label>
+      </div>
+
+    <p class="text-primary-emphasis text-center mt-5">COR PERSONALIZADA:</p>
+    <div class="nav row col-1 m-auto text-primary-emphasis justify-content-center">
+        <input type="color" name="n_txtclr" id="n_txtclr" [(ngModel)]="n_txtclr">
+    </div>
+
+    <div class="nav row col-2 m-auto mt-4 text-primary-emphasis">
+        <div class="input-group mb-3">
+            <div class="form-floating">
+            <input type="text" class="form-control" name="n_txt" id="n_txt" placeholder="Texto" [(ngModel)]="n_txt" />
+            <label for="n_txt">Texto</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav row col-2 m-auto mt-4 text-primary-emphasis">
+        <div class="input-group mb-3">
+            <div class="form-floating">
+            <input type="text" class="form-control" name="n_img" id="n_img" placeholder="Link da Imagem" [(ngModel)]="n_img">
+            <label for="n_img">Link da Imagem</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav row col-2 m-auto mt-3">
+        <button type="submit" class="btn btn-outline-primary">Testar API</button>
+    </div>
+
+    <div class="card text-center m-auto mt-4 mb-3" style="width: 30rem;">
+        <img src="{{n_imageresult}}" class="card-img-top" alt="">
+        <div class="card-body">
+          <p class="card-text">Resultado da Imagem</p>
+        </div>
+      </div>
+</form>
