@@ -19,8 +19,8 @@ interface PostData {
 })
 
 export class ApiTemplateioComponent {
-  KEY_Template: string = '27a77b2306262160'; // set Template Key
-  KEY_API: string = 'abeaMTY4NDI6MTM5MzA6bzFObTFoVUhLTG80U1ZxeQ='; // set API Key
+  KEY_Template: string = ' '; // set Template Key
+  KEY_API: string = ' '; // set API Key
 
   n_template: number = 0;
   n_txt: string = '';

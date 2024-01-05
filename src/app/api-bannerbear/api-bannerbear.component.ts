@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class ApiBannerbearComponent {
 
-  KEY_Template: string = ''; // set Template Key
-  KEY_API: string = ''; // set API Key
+  KEY_Template: string = ' '; // set Template Key
+  KEY_API: string = ' '; // set API Key
 
   n_template: number = 0;
   n_txt: string = '';
