@@ -19,8 +19,8 @@ interface PostData {
 })
 
 export class ApiTemplateioComponent {
-  KEY_Template: string = ' '; // set Template Key
-  KEY_API: string = ' '; // set API Key
+  KEY_TEMP: string = ''; // set Template Key
+  KEY_API: string = ''; // set API Key
 
   n_template: number = 0;
   n_txt: string = '';
@@ -84,7 +84,7 @@ export class ApiTemplateioComponent {
 
     let responseJSON = '';
 
-    fetch('https://rest.apitemplate.io/v2/create-pdf?template_id='+this.KEY_Template, {
+    fetch('https://rest.apitemplate.io/v2/create-pdf?template_id='+this.KEY_TEMP, {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {

@@ -1,5 +1,18 @@
 <form (ngSubmit)="getImg()">
 
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="light">
+        <div class="container-fluid justify-content-center">
+            <div class="input-group w-25 m-1">
+                <span class="input-group-text">API Key</span>
+                <input type="text" id="KEY_API" name="KEY_API" class="form-control" [(ngModel)]="KEY_API">
+              </div>
+              <div class="input-group w-25 m-1">
+                <span class="input-group-text">Template Key</span>
+                <input type="text" id="KEY_TEMP" name="KEY_TEMP" class="form-control" [(ngModel)]="KEY_TEMP">
+              </div>
+        </div>
+    </nav>
+
     <div class="nav row justify-content-center text-primary-emphasis fs-3 mt-5">
         PERSONALIZE SUA IMAGEM
     </div>
